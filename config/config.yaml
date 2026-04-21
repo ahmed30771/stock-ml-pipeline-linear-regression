@@ -1,0 +1,43 @@
+# Configuration file for stock price prediction model
+
+# Stock Symbol
+symbol: "OGDC"
+
+# Data settings
+data:
+  # Path to your stock data CSV file
+  file_path: "data/raw/"
+
+  # Column names in your CSV (adjust if your columns have different names)
+  columns:
+    date: "Date"
+    open: "Open"
+    high: "High"
+    low: "Low"
+    close: "Close"
+    volume: "Volume"
+
+
+# Model settings
+model:
+  # Column to predict
+  target_column: "Close"
+
+  # Test/train split ratio (0.2 = 20% for testing)
+  test_size: 0.2
+
+  # Whether to shuffle data (False for time series!)
+  shuffle: false
+
+# Feature engineering settings
+features:
+  # Simple Moving Average (SMA) periods
+  sma: [9, 21, 50, 150, 200]
+
+  # Relative Strength Index (RSI) periods
+  rsi: [14]
+
+  # Number of lag days to create
+  lag_days: [1, 2, 3]
+
+

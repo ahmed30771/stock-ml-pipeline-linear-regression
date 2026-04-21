@@ -1,0 +1,52 @@
+====================================================================================================
+                               Data Inspection Report
+====================================================================================================
+→ Number of Rows = 6
+→ Number of Columns = 6
+→ Duplicated Rows = 0
+----------------------------------------------------------------------
+          Dtype  Missing values
+Date        str               0
+Open    float64               0
+High    float64               0
+Low     float64               0
+Close   float64               0
+Volume  float64               0
+
+====================================================================================================
+                               Data Inspection Report Of Processed Data
+====================================================================================================
+→ Number of Rows = 17
+→ Number of Columns = 17
+→ Duplicated Rows = 0
+----------------------------------------------------------------------
+                     Dtype  Missing values
+Date        datetime64[us]               0
+Open               float64               0
+High               float64               0
+Low                float64               0
+Close              float64               0
+Volume             float64               0
+pct_change         float64               0
+Lag1               float64               0
+Lag2               float64               0
+Lag3               float64               0
+MA_9               float64               0
+MA_21              float64               0
+MA_50              float64               0
+MA_150             float64               0
+MA_200             float64               0
+RSI_14             float64               0
+Target             float64               0
+
+----------------------------------------------------------------------------------------------------
+Processed data is save at path: D:\D File\PYTHON\Github Project\P2\data\processed\OGDC.csv
+Pipeline is saved at path: D:\D File\PYTHON\Github Project\P2\models\linear_regression_pipeline.pkl
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+                               Model Evaluation Metrics
+====================================================================================================
+            MAE        MSE    RMSE      MAPE  R2 Score  Directional Accuracy
+Train  1.791592   6.306426  2.5113  0.013206  0.997074                0.5051
+Test   2.235029  11.747193  3.4274  0.015941  0.997570                0.5077
