@@ -7,7 +7,7 @@ from ..features import StockFeatureEngineer
 
 class StockModelRunner:
     def __init__(self,
-                 pipe_path="./models/linear_regression_pipeline.pkl",
+                 pipe_path="./model/linear_regression_pipeline.pkl",
                  ):
         self.pipe_path = os.path.abspath(pipe_path)
         self.config = load_config()

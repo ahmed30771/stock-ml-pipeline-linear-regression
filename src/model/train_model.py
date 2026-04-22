@@ -40,7 +40,7 @@ class StockPriceModel:
         pipe.fit(X_train, y_train)
         return pipe
 
-    def save_pipeline(self, pipe, path="./models/linear_regression_pipeline.pkl"):
+    def save_pipeline(self, pipe, path="./model/linear_regression_pipeline.pkl"):
         """
         Save a pipeline to disk using pickle.
 
@@ -50,7 +50,7 @@ class StockPriceModel:
             Trained pipeline object to save.
         path: str, optional
             File path for saving the pipeline.<br>
-            Defaults to "./models/pipeline.pkl"
+            Defaults to "./model/pipeline.pkl"
 
         Returns
         -------

@@ -7,7 +7,7 @@ venv/
 env/
 
 # Model files
-*.pkl
+models/*.pkl
 
 # OS files
 .DS_Store
