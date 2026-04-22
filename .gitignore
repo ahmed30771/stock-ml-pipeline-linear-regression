@@ -7,7 +7,7 @@ venv/
 
 
 # Model files (ignore only pickle files)
-models/*.pkl
+*.pkl
 
 # OS files
 .DS_Store
