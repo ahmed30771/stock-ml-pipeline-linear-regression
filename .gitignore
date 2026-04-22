@@ -4,9 +4,9 @@ __pycache__/
 
 # Virtual environment
 venv/
-env/
 
-# Model files
+
+# Model files (ignore only pickle files)
 models/*.pkl
 
 # OS files
