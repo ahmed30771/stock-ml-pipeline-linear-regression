@@ -21,20 +21,29 @@ This project is designed to build a machine learning pipeline that predicts the 
    ```
 
 ## Usage
-1. Prepare your dataset of PSX stock prices.
-2. Run the main script:
+1. Load data in data/raw.
+2. Set the configurations (specially symbol).
+3. Run the model training script:
+   ```bash
+   python train.py
+   ```
+4. Run the prediction script:
    ```bash
    python predict.py
    ```
-3. View results and evaluate the model's performance.
+5. View results and evaluate the model's performance.
 
 ## Project Structure
+- `config/`: Configuration of model.
 - `data/`: Contains datasets and data preprocessing scripts.
+- `model/`: Save the trained model.
 - `notebooks/`: Jupyter notebooks for exploratory data analysis and plotting.
 - `src/`: Source code for the model and prediction logic.
-- `requirements.txt`: List of required Python packages.
-- `predict.py`: Main script to run predictions.
+- `predict.py`: Script to run predictions.
 - `README.md`: Project documentation.
+- `Report.txt`: Record the data and model evaluations report.
+- `requirements.txt`: List of required Python packages.
+- `train.py`: Script to train model.
 
 ## Model Details
 This project uses Linear Regression, a robust algorithm designed to predict continuous outcomes based on input features. The model is trained with historical stock price data and utilizes multiple features derived from the data for improved predictions.
@@ -42,9 +51,9 @@ This project uses Linear Regression, a robust algorithm designed to predict cont
 ### Feature Engineering
 Several features are engineered from the raw stock price data, such as:
 - Moving averages
-- Price momentum indicators
-- Trading volume analytics
-
+- Relative Strength Index
+- Lag days
+- Change in price percentage
 ## Results
 The model evaluates its performance using metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE). Results show the predictive accuracy of the model across different time frames.
 
